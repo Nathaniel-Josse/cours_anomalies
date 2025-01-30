@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,18 @@
             <input type="password" name="password" placeholder="Mot de passe" required>
             <input type="submit" value="S'inscrire">
         </form>
+    </div>
+    <div class="gpt-discuss-form">
+        <h2>Discussion</h2>
+        <form action="http://localhost:3000/chat" method="post">
+            <label for="message">Message</label>
+            <input type="text" name="message" placeholder="Message" required>
+            <input type="submit" value="Envoyer">
+        </form>
+        <h2>Réponse</h2>
+        <div class="response-container">
+            <p></p>
+        </div>
     </div>
 </body>
 </html>
